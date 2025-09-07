@@ -11,9 +11,11 @@
 	<groupId>com.jenkins-build</groupId>
 	<artifactId>spring-jenkins</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>spring-jenkins</name>
 	<description>Demo project for Spring Boot</description>
+
+
 	<url/>
 	<licenses>
 		<license/>
@@ -47,8 +49,8 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
+		<finalName>spring-jenkins</finalName> <!-- Custom name for the output WAR file -->
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
